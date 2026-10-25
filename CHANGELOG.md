@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.1.1
+
+Rebuild on current Alpine for security fixes. No code changes.
+
+### Fixed
+- **brotli-libs CVE-2026-111497** (HIGH, out-of-bounds write in the Brotli
+  decoder) — the image is rebuilt on Alpine 3.24.3 with brotli-libs 1.2.1-r0.
+- **Other security updates from the same rebuild** — nginx 1.30.6, pcre2,
+  musl, nghttp2 and zlib.
+
 ## v0.1.0
 
 First release. Merges the previously separate WebDAV (nginx) and SMB (samba)

@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.1.2
+
+Rebuild on current Alpine for security fixes. No code changes.
+
+### Fixed
+- **apache2-utils CVE-2026-119618** (CRITICAL, remote code execution in
+  httpd mod_http2) — the image is rebuilt on Alpine 3.24.4 with apache2-utils
+  2.4.71-r0.
+- **libexpat CVE-2026-113351, CVE-2026-115506, CVE-2026-117610 and
+  CVE-2026-118370** (HIGH) — fixed by libexpat 2.10.0-r0.
+- **Other security updates from the same rebuild** — the remaining
+  apache2-utils MEDIUM CVEs (CVE-2026-106023, CVE-2026-109163) and one further
+  MEDIUM.
+
 ## v0.1.1
 
 Rebuild on current Alpine for security fixes. No code changes.

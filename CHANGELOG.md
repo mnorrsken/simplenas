@@ -1,5 +1,22 @@
 # Changelog
 
+## v0.1.3
+
+Rebuild on current Alpine for security fixes. No code changes.
+
+### Fixed
+- **nginx CVE-2026-113425, CVE-2026-121810, CVE-2026-123007 and
+  CVE-2026-123633** (CRITICAL, use-after-free in workers and HTTP/2 flow
+  control window overflow) — fixed by nginx and nginx-mod-http-dav-ext
+  1.30.7-r0. Also fixes HIGH CVE-2026-118899 and CVE-2026-123634, and MEDIUM
+  CVE-2026-120967, CVE-2026-123640 and CVE-2026-125283.
+- **libxml2 CVE-2026-86144** (HIGH) — fixed by libxml2 2.13.9-r3.
+- **OpenSSL CVE-2026-107496, CVE-2026-95691 and CVE-2026-95692** (MEDIUM) and
+  CVE-2026-88822 and CVE-2026-88823 (LOW) — fixed by libcrypto3 and libssl3
+  3.5.9-r1.
+- **gnutls CVE-2026-127039, CVE-2026-127040 and CVE-2026-127231** (one is a
+  double free in X.509 name constraints) — fixed by gnutls 3.8.14-r0.
+
 ## v0.1.2
 
 Rebuild on current Alpine for security fixes. No code changes.
